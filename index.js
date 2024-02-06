@@ -24,7 +24,7 @@ app.get('/specific/:id', (req, res)=>{
 app.get('/filter', (req, res)=>{
   const type = req.query.type
   const filteredJoke = jokes.filter((jokes)=> jokes.jokeType === type)
-  console.log(filteredJoke)
+  
   res.json(filteredJoke)
 })
 //4. POST a new joke
